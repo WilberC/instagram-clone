@@ -1,6 +1,9 @@
 /* Main Content */
+
 /* Recommended Users */
 .recommended-users {
+    max-width: 935px;
+    margin: 0 auto;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -18,6 +21,8 @@
 /* Article Options*/
 
 .article-option {
+    max-width: 935px;
+    margin: 53px auto 0 auto;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -50,6 +55,8 @@
 /* Gallery Articles*/
 
 .gallery-article {
+    max-width: 935px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
