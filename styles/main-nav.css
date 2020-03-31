@@ -17,3 +17,21 @@
 .logo-name {
     margin-left: 33px;
 }
+
+.search-input {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.search-input::placeholder {
+    text-align: center;
+}
+
+.search-input:focus::placeholder {
+    text-align: left;
+}

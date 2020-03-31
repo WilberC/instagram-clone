@@ -3,3 +3,17 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.btn {
+    padding: 5px 10px;
+    text-decoration: none;
+    background: #3897F0;
+    border-radius: 4px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.btn-sign-up {
+    background: none;
+    color: #3897F0;
+}
