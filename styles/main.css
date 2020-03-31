@@ -3,27 +3,3 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
-/* Main Nav */
-.main-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.logo-container-nav {
-    display: flex;
-    align-items: center;
-}
-
-.logo-small {
-    align-self: flex-start;
-}
-
-.logo-name {
-    margin-left: 33px;
-}
-
-/* Main Content */
-
-/* Main Footer */
