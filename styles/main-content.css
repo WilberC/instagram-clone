@@ -1,4 +1,7 @@
 /* Main Content */
+.main-header {
+    display: flex;
+}
 
 /* Recommended Users */
 .recommended-users {
@@ -11,6 +14,10 @@
 
 .recommended-users li {
     text-align: center;
+}
+
+.recommended-users li:hover {
+    cursor: pointer;
 }
 
 .recommended-users li span {
