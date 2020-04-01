@@ -117,22 +117,7 @@ body {
 
     .gallery-item {
         max-width: 165px;
-    }
-
-    .footer-more-options {
-        margin: 15px 0 15px 0 !important;
-        padding: 0;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .footer-more-options li {
-        margin: 0 !important;
-    }
-
-    .footer-more-options li:not(:last-child) {
-        margin-right: 15px !important;
-    }
+    }    
 }
 
 
