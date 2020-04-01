@@ -1,15 +1,16 @@
 /* Main Content */
-.main-header {
-    display: flex;
-}
+/*.main-header {*/
+/*display: flex;*/
+/*}*/
 
 /* Recommended Users */
 .recommended-users {
-    max-width: 935px;
-    margin: 0 auto;
+    grid-area: recommended-users;
+    width: 935px;
+    margin: 0 auto 0 auto;
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .recommended-users li {
@@ -29,7 +30,7 @@
 
 .article-option {
     max-width: 935px;
-    margin: 53px auto 0 auto;
+    margin: 200px auto 17px auto;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -71,20 +72,86 @@
     justify-items: center;
 }
 
-
 /* Main Content */
 /*profile info*/
-.main-header{
+.main-header {
     padding-top: 50px;
     max-width: 935px;
     margin: 0 auto;
 }
-h1{
+
+.profile-extra-info li, .profile-extra-info a {
+    font-size: 16px;
+    color: #262626;
+    font-weight: normal;
+    text-decoration: none;
+    list-style: none;
+}
+
+.user-info h2 {
+    color: #262626;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.user-info p {
+    color: #262626;
+    font-size: 15px;
+}
+
+.user-info a {
+    font-size: 16px;
+    color: #003569;
+    text-decoration: none;
+}
+
+/*grid */
+.main-header {
+    margin-bottom: 50px;
+    display: grid;
+    max-height: 150px;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    grid-template-areas:
+            "logo-big logo-big profile profile"
+            "logo-big logo-big user-info user-info"
+            "recommended-users recommended-users recommended-users recommended-users";
+}
+
+.logo-big {
+    align-self: flex-start;
+    justify-self: center;
+    height: auto;
+    grid-area: logo-big;
+}
+
+.profile-info {
+    grid-area: user-info;
+}
+
+/*.recommended-users {*/
+/*grid-area: recommend;*/
+/*}*/
+
+.profile-basic-info {
+    display: grid;
+    grid-area: profile;
+    grid-template-columns: 1fr 1.7fr 1fr;
+    grid-template-areas: "title button .";
+    justify-items: start;
+}
+
+.profile-name {
     font-weight: normal;
     font-size: 26px;
     color: #262626;
+    grid-area: title;
 }
-.profile-basic-info button{
+
+.btn-follow {
+    grid-area: button;
+    align-self: center;
     font-size: 14px;
     font-weight: normal;
     color: white;
@@ -93,117 +160,27 @@ h1{
     border-radius: 4px;
     padding: 6px 10px;
 }
-.profile-extra-info li, .profile-extra-info a{
-    font-size: 16px;
-    color: #262626;
-    font-weight: normal;
-    text-decoration: none;
-    list-style: none;
-}
-.user-info h2{
-    color: #262626;
-    font-size: 16px;
-    font-weight: normal;
-}
-.user-info p{
-    color: #262626;
-    font-size: 15px;
-}
-.user-info a{
-    font-size: 16px;
-    color:#003569;
-    text-decoration: none;
-}
-button{
-    width: 61px;
-    height: 30px;
-}
-/*grid */
-.main-header{
+
+.profile-extra-info {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
-    justify-content: center;
-    grid-template-areas: 
-    "logo logo profile profile"
-    "recommend recommend recommend recommed";
-}
-.logo-big{
-    align-self: center;
-    justify-self: center;
-    height: auto;
-    grid-area: logo;
-}
-.profile-info{
-    grid-area: profile;
-}
-.recommended-users{
-    grid-area: recommend;
-}
-.profile-basic-info{
-    display: grid;
-    grid-template-columns: 1fr 1.7fr 1fr;
-    grid-template-areas: 
-    "title button .";
-}
-h1{
-    grid-area: title;
-}
-button{
-    grid-area: button;
-    align-self: center;
-}
-.profile-extra-info{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 0;
 }
-.user-info{
-    margin: 25px 0px;
+
+.user-info {
+    grid-area: user-info;
+    margin: 25px 0;
 }
-.user-name, .user-description, .user-link{
-    margin:7px 0px;
+
+.user-name {
+    margin-top: 20px !important;
+}
+
+.user-name, .user-description, .user-link {
+    margin: 7px 0;
     padding-left: 0;
 }
-@media screen and (max-width:1023px){
-    .main-header{
-        display: grid;
-        max-width: 960px;
-        margin: 0 auto;
-        grid-template-columns: 0.5fr 1fr;
-        grid-template-areas: 
-        "image basic"
-        "user user"
-        "extra extra"
-        "recommend recommend";
-    }
-    .user-info{
-        grid-area: user;
-    }
-    .profile-extra-info{
-        grid-area: extra;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        padding: 0;
-    }
-    .recommended-users{
-        grid-area: recommend;
-    }
-    .profile-basic-info{
-        grid-area: basic;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "title"
-        "button";
-    }
-    h1{
-        grid-area: title;
-    }
-    button{
-        grid-area: button;
-        align-self: center;
-    }
-}
+
 
 
 

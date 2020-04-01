@@ -21,24 +21,119 @@ body {
 /* Responsive Design */
 
 @media only screen and (max-width: 500px) {
-    .main-content {
-        max-width: 500px !important;
+    .main-nav {
+        margin-top: 27px;
+        min-width: 500px;
+        display: grid !important;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .auth-btn {
+        justify-self: end;
+    }
+
+    .profile-name {
+        margin-top: 0;
+    }
+
+    .profile-extra-info {
+        text-align: center;
+    }
+
+    .profile-extra-info li span {
+        display: block;
+    }
+
+    .main-nav {
+        justify-content: space-around !important;
+    }
+
+    .search-form {
+        display: none;
+    }
+
+    .logo-big {
+        width: 77px;
+    }
+
+    .main-header {
+        padding-top: 20px;
+        margin-bottom: 0 !important;
+        width: 100%;
+        grid-row-gap: 25px;
+        grid-template-areas: "logo-big logo-big profile profile" "user-info user-info user-info user-info" "recommended-users recommended-users recommended-users recommended-users" "profile-extra-info profile-extra-info profile-extra-info profile-extra-info" !important;
+    }
+
+    .profile-basic-info {
+        display: block !important;
+    }
+
+    .user-info {
+        margin: 0 !important;
+        grid-area: user-info !important;
+    }
+
+    .profile-extra-info {
+        grid-area: profile-extra-info !important;
+    }
+
+    .recommended-user-img {
+        min-width: 56px;
+    }
+
+    .recommended-users {
+        padding-left: 0;
+        width: 500px !important;
+        grid-area: recommended-users !important;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+
+    .recommended-users li img:not(:last-child) {
+        margin-right: 15px;
+    }
+
+    .main-footer {
+        min-width: 500px !important;
+        margin: 0 auto;
+        box-sizing: content-box;
     }
 
     .article-option {
-        width: 100% !important;
+        /*width: 100% !important;*/
+        min-width: 500px !important;
         justify-content: space-around !important;
+        margin: 300px 0 15px 0 !important;
+        padding: 0;
+    }
+
+    .gallery-article {
+        grid-gap: 3px 3px !important;
+    }
+
+    .article-option li {
+        margin: 0;
+    }
+
+    .gallery-item {
+        max-width: 165px;
+    }
+
+    .footer-more-options {
+        margin: 15px 0 15px 0 !important;
+        padding: 0;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .footer-more-options li {
         margin: 0 !important;
     }
+
+    .footer-more-options li:not(:last-child) {
+        margin-right: 15px !important;
+    }
 }
-
-
-
-
-
-
-
-
 
 
 
