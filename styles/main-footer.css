@@ -1,29 +1,87 @@
 /* Main Footer */
-.footer-more-options {
-  display: flex;
-  margin-left: 80px;
-}
-.footer-more-options li {
-  margin-left: 25px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
-  text-transform: uppercase;
-  list-style-type: none;
-}
+
 .footer-more-options li a {
   text-decoration-line: none;
   color: #003569;
 }
-.brand-sign {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #999999;
-  margin-left: 144px;
-  margin-top: -10px;
-  margin-bottom: 30px;
+
+/* Mobile Styles */
+@media only screen and (max-width: 1023px) {
+  .main-footer {
+    display: grid;
+    text-align: center;
+  }
+  .footer-more-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+    width: 400px;
+    align-self: center;
+    margin: auto;
+    padding-right: 60px;
+  }
+  .footer-more-options li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-left: 25px;
+  }
+  .brand-sign {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #999999;
+  }
+}
+/*Desktop Styles*/
+@media only screen and (min-width: 1024px) {
+  .main-footer {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .footer-more-options {
+    display: flex;
+  }
+  .footer-more-options li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-left: 20px;
+    max-height: 1px;
+    text-align: center;
+  }
+  .brand-sign {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #999999;
+    margin-left: 60px;
+  }
+  .about_us {
+    min-width: 57px;
+  }
+  .sug_pro {
+    min-width: 124px;
+  }
 }
