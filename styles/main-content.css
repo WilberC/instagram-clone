@@ -72,6 +72,138 @@
 }
 
 
+/* Main Content */
+/*profile info*/
+.main-header{
+    padding-top: 50px;
+    max-width: 935px;
+    margin: 0 auto;
+}
+h1{
+    font-weight: normal;
+    font-size: 26px;
+    color: #262626;
+}
+.profile-basic-info button{
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    background-color: #3897f0;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+.profile-extra-info li, .profile-extra-info a{
+    font-size: 16px;
+    color: #262626;
+    font-weight: normal;
+    text-decoration: none;
+    list-style: none;
+}
+.user-info h2{
+    color: #262626;
+    font-size: 16px;
+    font-weight: normal;
+}
+.user-info p{
+    color: #262626;
+    font-size: 15px;
+}
+.user-info a{
+    font-size: 16px;
+    color:#003569;
+    text-decoration: none;
+}
+button{
+    width: 61px;
+    height: 30px;
+}
+/*grid */
+.main-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    justify-content: center;
+    grid-template-areas: 
+    "logo logo profile profile"
+    "recommend recommend recommend recommed";
+}
+.logo-big{
+    align-self: center;
+    justify-self: center;
+    height: auto;
+    grid-area: logo;
+}
+.profile-info{
+    grid-area: profile;
+}
+.recommended-users{
+    grid-area: recommend;
+}
+.profile-basic-info{
+    display: grid;
+    grid-template-columns: 1fr 1.7fr 1fr;
+    grid-template-areas: 
+    "title button .";
+}
+h1{
+    grid-area: title;
+}
+button{
+    grid-area: button;
+    align-self: center;
+}
+.profile-extra-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0;
+}
+.user-info{
+    margin: 25px 0px;
+}
+.user-name, .user-description, .user-link{
+    margin:7px 0px;
+    padding-left: 0;
+}
+@media screen and (max-width:1023px){
+    .main-header{
+        display: grid;
+        max-width: 960px;
+        margin: 0 auto;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-areas: 
+        "image basic"
+        "user user"
+        "extra extra"
+        "recommend recommend";
+    }
+    .user-info{
+        grid-area: user;
+    }
+    .profile-extra-info{
+        grid-area: extra;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 0;
+    }
+    .recommended-users{
+        grid-area: recommend;
+    }
+    .profile-basic-info{
+        grid-area: basic;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title"
+        "button";
+    }
+    h1{
+        grid-area: title;
+    }
+    button{
+        grid-area: button;
+        align-self: center;
+    }
+}
 
 
 
